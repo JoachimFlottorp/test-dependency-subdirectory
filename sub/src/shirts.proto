@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package shirts;
+
+message Shirt {
+    enum Size {
+        SMALL = 0;
+        MEDIUM = 1;
+        LARGE = 2;
+    }
+
+    string colour = 1;
+    Size size = 2;
+};
